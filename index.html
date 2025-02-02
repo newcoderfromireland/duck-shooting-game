@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duck Shooting Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Sidebar Ad -->
+  <div id="sidebar-ad" style="position: fixed; right: 10px; top: 50%; transform: translateY(-50%); width: 160px;">
+    <!-- Replace this with your Google AdSense code -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+      crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:160px;height:600px"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="YYYYYYYYYY"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- Game Container -->
+  <div class="game-container">
+    <h1>Duck Shooting Game</h1>
+    <div id="game-area"></div>
+    <div class="score-container">
+      <div>Score: <span id="score">0</span></div>
+      <div>Time Left: <span id="timer">30</span>s</div>
+      <div>High Score: <span id="high-score">0</span></div>
+    </div>
+    <p id="current-level">Level: <span>1</span></p>
+    <div id="miss-message" class="message hidden">You missed a duck! -1 point.</div>
+    <div id="powerup-message" class="message hidden">Power-Up Activated!</div>
+    <div id="levelup-message" class="message hidden">Congratulations! You've reached Level <span id="current-level-display">1</span>!</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
